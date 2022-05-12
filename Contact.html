@@ -71,8 +71,29 @@
 <div>
 
 
-<label for="password">Password</label>
-<input type="password" name="password:>  
+    <html>
+        <body>
+        
+        
+        
+        Password: <input type="password" value="" id="myInput"><br><br>
+        <input type="checkbox" onclick="myFunction()">Show Password
+        
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+        
+        </body>
+        </html>
+        
+  
 
 <div>
 
